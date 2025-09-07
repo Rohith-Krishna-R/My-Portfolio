@@ -1,0 +1,101 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: whitesmoke;
+  color: black;
+}
+
+header {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 24px;
+  font-size: 24px;
+  letter-spacing: 2px;
+  box-shadow: 0 2px 6px gray;
+}
+
+main {
+  padding: 32px;
+  display: flex;
+  justify-content: center;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  background: white;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px lightgray;
+  max-width: 900px;
+}
+
+.photo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 12px gray;
+  transition: transform 0.3s;
+}
+
+.bio {
+  flex: 2;
+}
+
+.bio h2 {
+  font-size: 28px;
+  margin-bottom: 16px;
+  color: darkslategray;
+}
+
+.bio p {
+  font-size: 16px;
+  margin: 8px 0;
+}
+
+.bio strong {
+  color: black;
+}
+
+.bio ul {
+  margin: 8px 0;
+  padding-left: 20px;
+}
+
+.bio ul li {
+  margin: 6px 0;
+  list-style-type: circle;
+}
+
+footer {
+  text-align: center;
+  padding: 16px 0;
+  background-color: black;
+  color: white;
+  margin-top: 32px;
+}
+
+@media screen and (max-width: 768px) {
+  .profile {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .photo img {
+    width: 150px;
+    height: 150px;
+  }
+}
